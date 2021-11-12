@@ -8,7 +8,7 @@ describe('Users API', () => {
         return request
             .get('/users')
             .then((res) => {
-                expect(res.body).is.not.be.empty;
+                expect(res.body).is.be.empty;
             });
     });
 
